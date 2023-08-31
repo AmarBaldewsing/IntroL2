@@ -1,0 +1,47 @@
+/*
+= Alle namen = 
+Nav - Text: 'Josefin Sans', sans-serif;
+Titel: 'Playfair Display', serif;
+Logo: Inconsolata', monospace;
+*/
+
+/*
+Colors:
+Main = #F5FBEF;
+Background = #748B75;
+Text = #92AD94;
+*/
+
+/*Alle links fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+/*Basic Styles: */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 1700px;
+    margin-inline: auto;
+}
+
+.logo {
+    font-family: 'Inconsolata', monospace;
+    font-size: 3rem;
+    line-height: 0.8;
+}
+
+.main{position: relative;}
+
+.main::before{
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    background-color: #362B17;
+    width: 100%;
+    height: 2px;
+}
