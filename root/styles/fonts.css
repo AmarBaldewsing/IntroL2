@@ -27,12 +27,21 @@ Text = #92AD94;
 .wrapper {
     max-width: 1700px;
     margin-inline: auto;
+    padding: 0 1em;
+}
+
+a {
+    text-decoration: none;
 }
 
 .logo {
-    font-family: 'Inconsolata', monospace;
-    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
     line-height: 0.8;
+    border: 2px solid #362B17;
+    color: #362B17;
+    padding: 0.5em;
 }
 
 .main{position: relative;}

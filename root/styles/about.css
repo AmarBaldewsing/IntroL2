@@ -1,0 +1,88 @@
+/*Main*/
+.con-main {
+    padding: 2rem 0;
+}
+
+.con-main .titel {
+    font-family: 'Playfair Display', serif;
+    color: #362B17;
+    text-transform: uppercase;
+    border-bottom: 1px solid #362B17;
+}
+
+.con-main .grid-main {
+    min-height: 50vh;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.con-main .grid-main p {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #362B17;
+    font-size: 1.25em;
+}
+
+.con-main .grid-main a {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #362B17;
+    font-size: 1.25em;
+    text-decoration: none;
+    border: 1px solid #362B17;
+    padding: 0.25em 0.5em;
+}
+
+.con-main .grid-main .titel-item {
+    font-family:  'Playfair Display', serif;
+    color: #362B17;
+    font-size: 1.25em;
+}
+
+.grid-main .intro {
+    grid-column: span 6;
+    grid-row: span 2;
+    display: grid;
+    place-items: center;
+    font-family: 'Playfair Display', serif;
+    color: #362B17;
+    text-align: center;
+    font-size: 1.25rem;
+}
+.grid-main .ik {
+    grid-column: span 3;
+    grid-row: span 2;
+    padding: 0.5em 0;
+}
+
+.grid-main .img-grid {
+    background-image: url("../media/about/ik.jpg");
+    background-position: center;
+    background-size: cover;
+    grid-column: span 3;
+    grid-row: span 4;
+}
+
+.grid-main .hobby {
+    grid-column: span 3;
+    grid-row: span 2;
+}
+.grid-main .edu {
+    grid-column: span 3;
+}
+.grid-main .ervaring {
+    grid-row: span 2;
+    grid-column: span 3;
+}
+.grid-main .skills {
+    grid-column: span 3;
+    grid-row: span 2;
+
+}
+.grid-main .slot {
+    grid-column: span 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}

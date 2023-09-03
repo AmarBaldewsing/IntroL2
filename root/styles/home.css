@@ -1,7 +1,7 @@
 /*header*/
 header .con-header {
     background-color: #362B17;
-    min-height: 55vh;
+    min-height: 70vh;
     color: white;
     display: flex;
     flex-direction: column;
@@ -40,13 +40,13 @@ header .con-header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 60vh;
+    min-height: 80vh;
 }
 
 .con-main .pic-main {
-    height: 250px;
-    width: 250px;
-    background-image: url("../media/ik.jpg");
+    height: 350px;
+    width: 350px;
+    background-image: url("../media/home/ik.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -77,6 +77,10 @@ header .con-header {
     gap: 2rem;
 }
 
+.proj, .con-header a{transition: all 0.2s;}
+.proj:hover, .con-header a:hover {scale: 1.05;}
+.proj {border: 2px solid #362B17;}
+
 .con-proj h1 {
     font-family: 'Playfair Display', serif;
     text-align: center;
@@ -88,32 +92,34 @@ header .con-header {
 
 .con-proj .con-fotos {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1em;
 }
 
 .con-proj .foto {
-    height: 200px;
-    width: 350px;
+    min-height: 200px;
+    min-width: 350px;
+    background-size: cover;
     filter: brightness(50%);
 }
 
 .con-proj .fot1 {
-    background-image: url("../media/f1.png");
-    background-size: cover;
+    background-image: url("../media/home/f1.png");
 }
 .con-proj .fot2 {
-    background-image: url("../media/p5.png");
-    background-size: cover;
+    background-image: url("../media/home/p5.png");
+    background-position: center;
 }
 .con-proj .fot3 {
-    background-image: url("../media/colombus-zoo.png");
-    background-size: cover;
-    background-position: center;
+    background-image: url("../media/home/colombus-zoo.png");
 }
 
 .con-proj p {
     font-family: 'Josefin Sans', sans-serif;
     line-height: 1.6;
     color: #362B17;
+    border-top: 2px solid #362B17;
     font-size: 1.25rem;
+    text-align: center;
 }
