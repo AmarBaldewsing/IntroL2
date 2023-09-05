@@ -2,7 +2,6 @@
 = Alle namen = 
 Nav - Text: 'Josefin Sans', sans-serif;
 Titel: 'Playfair Display', serif;
-Logo: Inconsolata', monospace;
 */
 
 /*
@@ -15,7 +14,6 @@ Text = #92AD94;
 /*Alle links fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
 /*Basic Styles: */
 * {

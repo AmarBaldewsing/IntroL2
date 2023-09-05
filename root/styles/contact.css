@@ -1,0 +1,69 @@
+.con-header {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.con-header h1 {
+    font-family: 'Playfair Display', serif;
+    color: #362B17;
+    line-height: 2.5;
+}
+
+.con-header .gegevens, .text p {
+    padding: 1rem 0;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #362B17;
+}
+
+.con-header .gegevens p {padding: 1em 0;}
+
+.gegevens {border-top: 1px solid hsla(39, 40%, 15%, .3);}
+
+.gegevens form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.gegevens form div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gegevens .vld {
+    min-width: 30vw;
+    min-height: 5vh;
+    border: 1px solid hsla(39, 40%, 15%, .1);
+}
+
+.con-header .text {
+    padding: 2em 0;
+    border-top: 1px solid hsla(39, 40%, 15%, .3);
+    border-bottom: 1px solid hsla(39, 40%, 15%, .3);
+}
+
+.text textarea {
+    resize: none;
+    width: 100%;
+    height: 15vh;
+    border: 1px solid hsla(39, 40%, 15%, .1); 
+}
+
+
+.con-header .verzend{display: flex; flex-direction: row; justify-content: flex-end;}
+
+.con-header .verzend button {
+    background-color: #362B17;
+    color: #fff;
+    padding: 1.5em 3em;
+    border: none;
+    transition: all 150ms ease;
+}
+
+.con-header .verzend button:hover {
+    scale: 1.05;
+}
