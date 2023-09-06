@@ -1,5 +1,4 @@
 .con-header {
-    padding: 1rem 0;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -19,7 +18,7 @@
 
 .con-header .gegevens p {padding: 1em 0;}
 
-.gegevens {border-top: 1px solid hsla(39, 40%, 15%, .3);}
+.gegevens {border-top: 1px solid hsla(39, 40%, 15%, .8);}
 
 .gegevens form {
     display: grid;
@@ -42,8 +41,8 @@
 
 .con-header .text {
     padding: 2em 0;
-    border-top: 1px solid hsla(39, 40%, 15%, .3);
-    border-bottom: 1px solid hsla(39, 40%, 15%, .3);
+    border-top: 1px solid hsla(39, 40%, 15%, .8);
+    border-bottom: 1px solid #362b17cc;
 }
 
 .text textarea {

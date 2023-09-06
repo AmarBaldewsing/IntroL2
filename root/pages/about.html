@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="../styles/fonts.css">
     <link rel="stylesheet" href="../styles/nav.css">
     <link rel="stylesheet" href="../styles/about.css">
+    <script src="../scripts/about.js" defer></script>
 </head>
 <body>
-    <nav>
+    <nav id="nav">
         <div class="wrapper con-nav">
             <a  href="../index.html" class="logo logo-nav">
                 <h1>A</h1>
@@ -18,55 +19,130 @@
             <ul class="links-nav">
                 <li><a href="../index.html">Home</a></li>
                 <li><a class="main" href="about.html">Over Mij</a></li>
-                <li><a href="projecten.html">Projecten</a></li>
+                <li><a href="projecten.php">Projecten</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
     </nav>
-    <main>
+    <header>
+        <div class="wrapper con-header">
+            <h1>Ik ben niet de hele dag aan het programmeren en designen</h1>
+            <a  href="#main" class="con-arrow">
+                <div class="arrow"></div>
+            </a>
+        </div>
+    </header>
+    <main id="main">
         <div class="wrapper con-main">
-            <h1 class="titel">Over Mij</h1>
-            <div class="grid-main">
-                <div class="intro">
-                    <h1>"Ik Ben Amar Baldewsing, ik ben 17 jaar oud en ik programmeer websites!"</h1>
+            <div class="img-main"></div>
+            <div class="txt">
+                <div class="title">
+                    <h4>Developer</h4>
+                    <h1>Ik Ben Amar Baldewsing en ik programmeer websites</h1>
                 </div>
-                <div class="ik">
-                    <h3 class="titel-item">Wie ben Ik?</h3>
-                    <p>Mijn naam is Amar Baldewsing. Ik ben 17 jaar oud en ik woon in Maassluis. Ik ben een 2e jaars studente Software Development op het Grafisch Lyceum te Rotterdam(Niveau 4). Ik noem mijzelf vooral een Front-End Developer, sinds ik niet zo bekend ben met de back-end. Daarintegen ben de back-end wel aan het leren. Noem ik mijzelf een full-stack developer na het leerproces? Zeker niet, want er gaat uiteindelijk een moment komen dat ik mijzelf ga verdiepen in of de Front-end of de Back-end</p>
-                </div>
-                <div class="img-grid"></div>
-                <div class="hobby">
-                    <h3 class="titel-item">Mijn Hobby's en bijbaantje</h3>
-                    <p>Mijn hobby is vooral sporten, en dan vooral naar de gym gaan. Anders zit ik thuis of in een stadion voetbal te kijken(Up the Reds!). Een trouwe supporter van Liverpool. Veder heb ik ook een bijbaantje bij de Hoogvliet in Maassluis. Daar ben ik een vuploegmedewerker waar ik al meer dan 2 jaar ervaring heb. Daar heb ik de skill klantvriendelijkheid geleerd en hoe ik het beste uit mijzelf kan halen.</p>
-                </div>
-                <div class="edu">
-                    <h3 class="titel-item">Diploma's behaald</h3>
-                    <p>Als het komt tot educatie, heb ik alleen de middelbareschool afgerond. Op dit moment ben ik bezig met mijn opleiding Software Development MBO niveau 4. daar zit ik in leerjaar 2. Na mijn opleiding ga ik Werken of ander nog een HBO opleiding doen.
-                    </p>
-                </div>
-                <div class="ervaring">
-                    <h3 class="titel-item">Mijn Programmeer Ervaringen</h3>
-                    <p>veder heb ik niet al te veel ervaring in het programmeren van websites voor klanten. Op dit moment heb ik heel projecten die voor mijzelf waren om de technieken uitteproberen en toepassen daarvan. wanneer het komt tot de talen die kan, zijn het: HTML, CSS en Javascript. PHP en C# ben ik op dit moment aan het leren</p>
-                </div>
-                <div class="skills">
-                    <h3 class="titel-item">Skills die ik heb</h3>
-                    <p>Wat zijn mijn skills? Als ik aan het werk ga, wil ik altijd structureel aan de slag gaan. Dit  heb ik mijzelf aangeleerd, sinds ik dan beter mijn doelen met het werk kan behalen en daadwerkelijk een kwaliteits product kan maken. Veder wil ik ook ervoor zorgen dat de klant al zijn wensen kan behalen en optijd zijn werk krijgt, oftewel klantvriendelijkheid en de deadline halen staan ook hoog bij mij. </p>
-                </div>
-                <div class="slot">
-                    <h3 class="titel-item">In Contact komen</h3>
-                    <p>Bij deze hoop ik u voldoende te hebben geinformeerd! heeft u nog verdere vragen? dan kunt u altijd met mij in contact komen via de conact pagina.</p>
-                    <a href="contact.html">Kom in Contact</a>
-                </div>
+                <p class="desc">Mijn naam is Amar Baldewsing. Ik ben 17 jaar oud en ik woon in Maassluis. Ik ben een 2e jaars studente Software Development op het Grafisch Lyceum te Rotterdam(Niveau 4). Ik noem mijzelf vooral een Front-End Developer, sinds ik niet zo bekend ben met de back-end. Daarintegen ben de back-end wel aan het leren. Na het leren van de Back-end ga ik mij verdiepen in 1 van de 2 End</p>
             </div>
         </div>
     </main>
-    <footer>
+    <section id="skills">
+        <div class="wrapper con-skills">
+            <div class="txt-skills">
+                <h1>Mijn Skills</h1>
+                <p class="intro-p">Dit zijn de technieken die ik kan beheersen of heb geleerd. De scores zijn door mijzelf bepaald. Verder zijn er nog behoorlijk veel technieken die ik nu aan het leren ben.</p>
+            </div>
+            <div class="graph-con">
+                <div class="skill">
+                    <p>HTML</p>
+                    <div class="bar">
+                        <div class="prog" per="95%" style="max-width: 95%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>CSS</p>
+                    <div class="bar">
+                        <div class="prog" per="90%" style="max-width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>Javascript</p>
+                    <div class="bar">
+                        <div class="prog"  per="75%" style="max-width: 75%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>PHP</p>
+                    <div class="bar">
+                        <div class="prog" per="25%" style="max-width: 25%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>C#</p>
+                    <div class="bar">
+                        <div class="prog" per="40%" style="max-width: 40%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>Python</p>
+                    <div class="bar">
+                        <div class="prog" per="70%" style="max-width: 70%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>SCSS</p>
+                    <div class="bar">
+                        <div class="prog" per="65%" style="max-width: 65%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>Node.js</p>
+                    <div class="bar">
+                        <div class="prog" per="15%" style="max-width: 15%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="ik">
+        <div class="wrapper con-ik">
+            <div onclick="popUp(1)" class="card hobby">
+                <span>Mijn Hobby's</span>
+            </div>
+            <div onclick="popUp(2)" class="card school">
+                <span>Opleiding</span>
+            </div>
+            <div onclick="popUp(3)" class="card ervaring">
+                <span>Ervaringen</span>
+            </div>
+        </div>
+    </section id="cv">
+    <section>
+        <div class="wrapper cv">
+            <a href="../media/CV - Amar Baldewsing.docx" download="CV - Amar Baldewsing">Download CV</a>
+            <a href="../media/CV - Amar Baldewsing.pdf" target="_blank">Bekijk CV</a>
+        </div>
+    </section>
+    <section id="popUp" style="display: none;">
+        <div class="wrapper content">
+            <div class="top">
+                <div class="cross" onclick="popUp()"></div>
+            </div>
+            <div class="bottom">
+                <img id="img">
+                <div class="txt-card">
+                    <h1 id="title">Lorem ipsum dolor sit amet.</h1>
+                    <p id="txt-card"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
         <div class="wrapper con-footer">
             <ul class="links-footer">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="./pages/about.html">Over Mij</a></li>
-                <li><a href="./pages/projecten.html">Projecten</a></li>
-                <li><a href="./pages/contact.html">Contact</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">Over Mij</a></li>
+                <li><a href="projecten.php">Projecten</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Admin</a></li>
             </ul>
             <p>Amar Baldewsing ©2023 - All Rights Reserved</p>
         </div>

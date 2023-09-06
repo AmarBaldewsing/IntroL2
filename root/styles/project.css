@@ -1,0 +1,55 @@
+.con-main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 33.33333%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.con-main .card {
+    display: flex;
+    flex-direction: column;
+    height: min(50vh, 55vh);
+    width: min(25vw, 30vw);
+    border: 1px solid hsla(39, 40%, 15%, .1); 
+    transition: all ease 150ms;
+}
+
+.con-main .card:hover {scale: 1.05;}
+
+.card .card-content {
+    padding: 1em;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.con-main .card p {
+    width: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #362B17;
+    border-bottom: 1px solid hsla(39, 40%, 15%, .1); 
+    padding: 0.5em 0;
+}
+
+.con-main .card h1 {
+    padding: 0.2em 0;
+    border-top: 1px solid hsla(39, 40%, 15%, .1); 
+    font-family: 'Playfair Display', serif;
+    color: #362B17;
+}
+
+.con-main .card a {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.8em 0;
+    text-align: center;
+    background-color: #362B17;
+    text-transform: uppercase;
+}
+
+.con-main .card img {
+    max-width: 100%;
+}

@@ -1,88 +1,312 @@
-/*Main*/
-.con-main {
-    padding: 2rem 0;
+html {scroll-behavior: smooth;}
+
+nav {
+    position: fixed;
+    width: 100%;
 }
 
-.con-main .titel {
-    font-family: 'Playfair Display', serif;
-    color: #362B17;
-    text-transform: uppercase;
-    border-bottom: 1px solid #362B17;
-}
-
-.con-main .grid-main {
-    min-height: 50vh;
-    display: grid;
-    grid-gap: 1em;
-    grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-}
-
-.con-main .grid-main p {
+p {
     font-family: 'Josefin Sans', sans-serif;
     color: #362B17;
-    font-size: 1.25em;
 }
 
-.con-main .grid-main a {
-    font-family: 'Josefin Sans', sans-serif;
-    color: #362B17;
-    font-size: 1.25em;
-    text-decoration: none;
-    border: 1px solid #362B17;
-    padding: 0.25em 0.5em;
+.con-header {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
 }
 
-.con-main .grid-main .titel-item {
-    font-family:  'Playfair Display', serif;
-    color: #362B17;
-    font-size: 1.25em;
-}
-
-.grid-main .intro {
-    grid-column: span 6;
-    grid-row: span 2;
-    display: grid;
-    place-items: center;
-    font-family: 'Playfair Display', serif;
-    color: #362B17;
+.con-header h1 {
+    font-size: 3rem;
+    width: 30ch;
     text-align: center;
-    font-size: 1.25rem;
-}
-.grid-main .ik {
-    grid-column: span 3;
-    grid-row: span 2;
-    padding: 0.5em 0;
+    font-family: 'Playfair Display', serif;
+    color: #362B17;
 }
 
-.grid-main .img-grid {
+.con-arrow {
+    border: 1px solid #362B17;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease 150ms;
+}
+
+.con-arrow:hover {scale: 1.05;}
+
+.con-arrow .arrow {
+    height: 50%;
+    width: 50%;
+    transform: rotate(-45deg);
+    border: solid #362B17;
+    border-width: 0 0 2px 2px;
+}
+
+main {color: #fff; background-color: #362B17;}
+
+.con-main {
+    min-height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.con-main .img-main {
+    height: 350px;
+    width: 350px;
     background-image: url("../media/about/ik.jpg");
-    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    grid-column: span 3;
-    grid-row: span 4;
 }
 
-.grid-main .hobby {
-    grid-column: span 3;
-    grid-row: span 2;
-}
-.grid-main .edu {
-    grid-column: span 3;
-}
-.grid-main .ervaring {
-    grid-row: span 2;
-    grid-column: span 3;
-}
-.grid-main .skills {
-    grid-column: span 3;
-    grid-row: span 2;
-
-}
-.grid-main .slot {
-    grid-column: span 3;
+.con-main .txt {
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
+    gap: 2rem;
+}
+
+.con-main p {
+    max-width: 65ch;
+    color: #fff;
+}
+
+.con-main h1, h4 {
+    font-family: 'Playfair Display', serif;
+    max-width: 22ch;
+}
+
+.con-main h4 {
+    position: relative;
+    display: inline-block;
+    padding: 0.25em 0;
+}
+.con-main h4::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    background-color: #fff;
+    width: 100%;
+    height: 2px;
+}
+
+.con-skills {
+    padding: 2em 0;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.con-skills h1 {
+    font-family: 'Playfair Display', serif;
+    color: #362B17;
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+.con-skills .intro-p {
+    max-width: 50ch;
+    text-align: center;
+}
+
+.con-skills .graph-con {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.graph-con .bar {
+    width: 100%;
+    height: 20px;
+    background-color: hsl(0, 0%, 95%);
+    border: 1px solid hsla(0, 0%, 80%, 0.5);
+}
+
+.graph-con .bar .prog {
+    height: 100%;
+    background-color: #362B17;
+    position: relative;
+    animation: BarVolledig 4s ease-out 1;
+}
+
+.graph-con .bar .prog::after {
+    content: attr(per);
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fff;
+    text-align: center;
+    height: 20px;
+    width: 40px;
+    position: absolute;
+    top: -30px;
+    right: -20px;
+    background-color: #362B17;
+}
+
+.graph-con .bar .prog::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    right: -5px;
+    top: -15px;
+    transform: rotate(-45deg);
+    background-color: #362B17;
+}
+
+@keyframes BarVolledig {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.con-ik {
+    min-height: 40vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.con-ik .card {
+    font-family: 'Playfair Display', serif;;
+    height: 20vh;
+    width: 20vw;
+    color: #fff;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    transition: all 250ms;
+}
+
+.con-ik .card:hover {scale: 1.05; cursor: pointer;}
+
+.card span {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.con-ik .hobby {background-image: url("../media/about/gym.jpg");}
+.con-ik .school {background-image: url("../media/about/GLR.jpg");}
+.con-ik .ervaring {background-image: url("../media/about/f1.png");}
+
+.cv {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
+
+.cv a {
+    background-color: #362B17;
+    color: #fff;
+    padding: 1em 2em;
+    border: none;
+    transition: all 150ms ease;
+}
+
+.cv a:hover{
+    scale: 1.05;
+}
+
+#popUp {
+    display: block;
+    padding: 2rem 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #232323b6;
+}
+
+#popUp .content {
+    height: 80vh;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: white;
+}
+
+#popUp .content .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#popUp .content h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #362B17;
+    font-size: 2.2rem;
+}
+
+#popUp .content .cross {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 2px solid #362B17;
+    transition: all 250ms ease;
+}
+
+#popUp .content .cross:hover {
+    transform: rotate(25deg);
+}
+
+#popUp .content .cross::before {
+    content: "";
+    width: 80%;
+    height: 3px;
+    position: absolute;
+    bottom: 22px;
+    right: 5px;
+    transform: rotate(45deg);
+    background-color: #362B17;
+}
+
+#popUp .content .cross::after {
+    content: "";
+    width: 80%;
+    height: 3px;
+    position: absolute;
+    bottom: 22px;
+    right: 5px;
+    transform: rotate(-45deg);
+    background-color: #362B17;
+}
+
+#popUp .content .bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+
+#popUp .content .bottom p {
+    max-width: 55ch;
+}
+
+.txt-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#popUp .content img {
+    max-width: 60%;
+    max-height: 60%;
 }
